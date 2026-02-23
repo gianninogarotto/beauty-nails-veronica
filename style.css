@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff7fb;
+    color: #333;
+}
+
+header {
+    background-color: #f7d7e8;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #b30059;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #b30059;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('immage.jpg') center/contain no-repeat;
+    padding: 120px 20px; /* questo rimane com’è */
+    text-align: center;
+    color: #99004d;
+    position: relative; /* necessario */
+}
+
+.hero * {
+    position: relative;
+    top: 280px; /* aumenta per abbassare la scritta */
+}
+
+
+.hero h1,
+.hero p {
+    position: relative;
+    top: 280px; /* aumenta per abbassare la scritta */
+}
+
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #b30059;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    top: 270px; /* aumenta o diminuisci per spostarlo */
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #f7d7e8;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* --- ZOOM NEL LIGHTBOX --- */
+.lightbox-content {
+    transition: transform 0.2s ease;
+    cursor: grab;
+}
+.chi-siamo-section {
+    position: relative;
+    top: 130px; /* aumenta per abbassare ancora di più */
+}
