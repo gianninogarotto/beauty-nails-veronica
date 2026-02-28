@@ -1,20 +1,25 @@
+/* GENERALI */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #fff7fb;
     color: #333;
+    line-height: 1.6;
 }
 
+/* HEADER */
 header {
     background-color: #f7d7e8;
-    padding: 20px;
+    padding: 25px 20px;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 32px;
     color: #b30059;
+    letter-spacing: 1px;
 }
 
 nav a {
@@ -22,98 +27,123 @@ nav a {
     text-decoration: none;
     color: #b30059;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
+nav a:hover {
+    color: #ff66a3;
+}
+
+/* HERO — SOLO IMMAGINE */
 .hero {
-    background: url('immage.jpg') center/contain no-repeat;
-    padding: 120px 20px; /* questo rimane com’è */
+      height: 60vh;
+    background-image: url("Gallery/negozio.jpg");
+    background-size: 80%; /* riduce leggermente l’immagine */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid #f7d7e8;
+    position: relative;
+}
+
+
+/* Ombra leggera per rendere leggibile il testo */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
+
+/* TESTO SOTTO L’IMMAGINE */
+.hero-text {
     text-align: center;
+    padding: 40px 20px;
     color: #99004d;
-    position: relative; /* necessario */
+    width: 100%;
+    margin: 0 auto;
 }
 
-.hero * {
-    position: relative;
-    top: 280px; /* aumenta per abbassare la scritta */
-}
-
-
-.hero h1,
-.hero p {
-    position: relative;
-    top: 280px; /* aumenta per abbassare la scritta */
-}
-
-
-.hero h2 {
-    font-size: 40px;
+.hero-text h2 {
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
 .btn {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 12px 30px;
     background-color: #b30059;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    position: relative;
-    top: 270px; /* aumenta o diminuisci per spostarlo */
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 
+.btn:hover {
+    background-color: #ff66a3;
+}
+
+/* SEZIONI */
 .section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
+/* CARDS */
 .cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
 }
 
 .card {
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     width: 280px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-    margin-top: 30px;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
 
-.gallery img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+/* SOCIAL ICONS */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+.social-icons a {
+    color: #b30059;
+    font-size: 34px;
+    transition: 0.3s ease;
 }
 
+.social-icons a:hover {
+    color: #ff66a3;
+}
+
+/* FOOTER */
 footer {
     background-color: #f7d7e8;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #99004d;
 }
 
-/* --- ZOOM NEL LIGHTBOX --- */
-.lightbox-content {
-    transition: transform 0.2s ease;
-    cursor: grab;
-}
-.chi-siamo-section {
-    position: relative;
-    top: 130px; /* aumenta per abbassare ancora di più */
-}
+
