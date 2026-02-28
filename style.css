@@ -37,7 +37,7 @@ nav a:hover {
 /* HERO — SOLO IMMAGINE */
 .hero {
     height: 60vh;
-    background-image: url("Gallery/negozio.jpg"); /* assicurati che il percorso sia giusto */
+    background-image: url("Gallery/foto201.jpg"); /* assicurati che il percorso sia giusto */
     background-size: 80%;          /* riduce leggermente l’immagine */
     background-position: center;
     background-repeat: no-repeat;
@@ -143,6 +143,7 @@ footer {
     font-size: 14px;
     color: #99004d;
 }
+
 
 
 
