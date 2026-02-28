@@ -36,17 +36,16 @@ nav a:hover {
 
 /* HERO — SOLO IMMAGINE */
 .hero {
-      height: 60vh;
-    background-image: url("Gallery/negozio.jpg");
-    background-size: 80%; /* riduce leggermente l’immagine */
+    height: 60vh;
+    background-image: url("Gallery/negozio.jpg"); /* assicurati che il percorso sia giusto */
+    background-size: 80%;          /* riduce leggermente l’immagine */
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: 5px solid #f7d7e8;
     position: relative;
 }
 
-
-/* Ombra leggera per rendere leggibile il testo */
+/* Ombra leggera sopra l’immagine (se non la vuoi, elimina questo blocco) */
 .hero::after {
     content: "";
     position: absolute;
@@ -57,7 +56,7 @@ nav a:hover {
 /* TESTO SOTTO L’IMMAGINE */
 .hero-text {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 20px 20px;
     color: #99004d;
     width: 100%;
     margin: 0 auto;
@@ -73,7 +72,7 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-/* BUTTON */
+/* BUTTON GENERICO */
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -117,8 +116,7 @@ nav a:hover {
     box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
 
-
-/* SOCIAL ICONS */
+/* SOCIAL ICONS (se le userai) */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -145,5 +143,6 @@ footer {
     font-size: 14px;
     color: #99004d;
 }
+
 
 
